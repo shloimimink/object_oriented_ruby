@@ -20,18 +20,15 @@ class Fruits
   def change_fruit_name
     @fruit_name = "pinapple"
   end
-
 end
-
-
 
 fruit1 = Fruits.new("apple", "green", 4.99)
 fruit2 = Fruits.new("pepper", "orange", 5.99)
+fruit3 = Fruits.new("pear", "green", 7.99)
 
 fruit1.print_info
 fruit2.change_price
 
 fruit2.print_info
 p fruit2.get_fruit_name
-p fruit2.change_fruit_name 
-
+p fruit2.change_fruit_name
