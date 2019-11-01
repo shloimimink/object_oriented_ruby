@@ -1,3 +1,7 @@
+require "./motorcicle.rb"
+require "./bike.rb"
+require "./car.rb"
+
 
 module transpotation
 def initialize
@@ -22,21 +26,3 @@ def initialize
   end
 end
 
-
-class Car
-  include transpotation
-  def honk_horn
-    puts "Beeeeeeep!"
-  end
-end
-
-class motorCicle < Car
-    include transpotation
-end
-
-class Bike
-  include transpotation
-  def ring_bell
-    puts "Ring ring!"
-  end
-end
